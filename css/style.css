@@ -1,0 +1,617 @@
+
+/*-------------------------
+    farvekoder:
+
+    turkis: #00a8b0
+    blå: #00404a
+    grå: #c8c8c8
+-------------------------*/
+
+
+@font-face {
+font-family: 'Avenir Next LT Pro Regular';
+font-style: normal;
+font-weight: normal;
+src: local('Avenir Next LT Pro Regular'), url('fonts/AvenirNextLTPro-Regular.woff') format('woff');
+}
+
+@font-face {
+font-family: 'Avenir Next LT Pro Ultra Light Condensed';
+font-style: normal;
+font-weight: normal;
+src:  url('fonts/AvenirNextLTPro-UltLtCn.woff') format('woff');
+}
+
+
+body {
+  font-family: 'Avenir Next LT Pro Ultra Light Condensed', sans-serif;
+}
+/*-------------------------
+    Sticky footer
+-------------------------*/
+
+
+.navbar-footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 60px;
+    width: 100%;
+    color:#FFFFFF; 
+    background: #fff;
+    font-size:1.2em;
+    letter-spacing: 0.2em;
+    text-align: center;
+    line-height:100px;
+    z-index:9999;
+}
+
+.navbar-footer ul {
+    height: 60px;
+    padding: 8px 0px;
+    margin: 0px;
+}
+
+.navbar-footer li { 
+    display: inline; 
+    padding: 20px; 
+}
+
+.navbar-footer a {
+    text-decoration: none;
+    color: #3c3c3b;
+    padding: 0;
+}
+
+.navbar-footer a:hover {
+    color: #ddd;
+}
+
+/*-------------------------
+    Slider OWL
+-------------------------*/
+
+#bar{
+  width: 0%;
+  max-width: 100%;
+  height: 4px;
+  background: #00a8b0;
+}
+#progressBar{
+  width: 100%;
+  background: #EDEDED;
+}
+@media screen and (min-width: 1200px){
+    #owl-demo .item img{
+      display: block;
+      width: 100%;
+      height: 620px;
+    }
+    #demo{
+        margin-top: 60px; 
+        margin-bottom: 100px; 
+    }
+    .offer-container{
+        margin-top: 80px;
+    }
+}
+@media screen and (min-width: 992px) and (max-width: 1199px){
+    #owl-demo .item img{
+      display: block;
+      width: 100%;
+      height: 620px;
+    }
+    #demo{
+        margin-top: 60px; 
+        margin-bottom: 100px; 
+    }
+    .offer-container{
+        margin-top: 80px;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 991px){
+    #owl-demo .item img{
+      display: block;
+      width: 100%;
+      height: 620px;
+    }
+    #demo{
+        margin-top: 60px; 
+        margin-bottom: 100px; 
+    }
+    .offer-container{
+        margin-top: -40px;
+    }
+}
+@media screen and (max-width: 767px){
+    #owl-demo .item img{
+      display: block;
+      width: 100%;
+      height: 285px;
+    }
+    #demo{
+        margin-top: 60px; 
+    }
+    .page_down{
+        display: none; 
+    }
+}
+
+
+/*-------------------------
+    logo position
+-------------------------*/
+
+.logo{  
+    z-index:555;
+}
+
+.page_down{
+    z-index: 555!important;
+    width: 40px;
+    height: 40px; 
+    position: absolute;
+  
+    left: calc(50vw - (/* width */40px / 2)); 
+    cursor: pointer;
+}
+.page_down:hover{
+        -webkit-transform: scale(1.1, 1.1);
+    -webkit-transition-timing-function: ease-out;
+    -moz-transform: scale(1.1, 1.1);
+    -moz-transition-duration: 500ms;
+    -moz-transition-timing-function: ease-out;
+    -ms-transform: scale(1.1, 1.1); 
+    -ms-transition-duration: 500ms; 
+    -ms-transition-timing-function: ease-out;
+}
+
+@media screen and (min-width: 1200px){
+    .logo{ 
+        width: 900px;
+        height: 176px;
+        position: absolute;
+        top: calc(50vh - (/* height */176px / 2));
+        left: calc(50vw - (/* width */900px / 2));        
+    }
+    .page_down{
+        top: calc(73vh - (/* height */40px / 2));
+    }
+}
+@media screen and (min-width: 992px) and (max-width: 1199px){
+    .logo{ 
+        width: 700px;
+        height: 137px;
+        position: absolute;
+        top: calc(50vh - (/* height */137px / 2));
+        left: calc(50vw - (/* width */700px / 2));        
+    }
+    .page_down{
+        top: calc(74vh - (/* height */40px / 2));
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 991px){
+    .logo{ 
+        width: 600px;
+        height: 117px;
+        position: absolute;
+        top: calc(38vh - (/* height */117px / 2));
+        left: calc(50vw - (/* width */600px / 2));        
+    }
+    .page_down{
+        display: none;
+    }
+}
+@media screen and (max-width: 767px){
+    .logo{ 
+        width: 300px;
+        height: 59px;
+        position: absolute;
+        top: calc(38vh - (/* height */59px / 2));
+        left: calc(50vw - (/* width */300px / 2));        
+    }
+    .page_down{
+        top: calc(53vh - (/* height */40px / 2));
+    }
+}
+
+/*-------------------------
+    Filter
+-------------------------*/
+    
+img.desaturate { 
+	-webkit-filter:  blur(1px) saturate(20%) brightness(140%);
+	filter:  blur(1px) saturate(20%) brightness(140%);
+	filter: gray;
+}
+
+/*-------------------------
+    Navbar
+-------------------------*/
+
+@media screen and (min-width: 1200px){
+
+}
+@media screen and (min-width: 992px) and (max-width: 1199px){
+
+}
+@media screen and (min-width: 768px) and (max-width: 991px){
+
+}
+@media screen and (max-width: 767px){
+    .navbar-default .navbar-nav > li > a {
+        padding-left: 30px!important;
+        height: 40px!important;
+        margin-top: -8px; 
+    }
+    .navbar-header{
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+}
+
+/*-------------------------
+    services
+-------------------------*/
+
+.services img{
+    width: 170px;
+    height: auto;    
+}
+
+
+.services{
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+}
+
+.heading-we-offer{
+    margin-bottom: 30px; 
+}
+
+.txt{
+    padding: 0;
+}
+
+
+.txt-services{
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 10px;
+    padding-bottom: 20px;   
+}  
+
+.txt-services p{
+    display: none;    
+}  
+
+.txt-services h4{
+    color: #bdbdbd; 
+    font-weight: 100;
+}  
+
+@media screen and (min-width: 768px){
+    .page-down{
+        padding-top: 50px; 
+        padding-bottom: 30px; 
+    }
+}
+@media screen and (max-width: 767px){
+    .txt-services{
+        padding-left: 0!important;
+        padding-right: 0!important;
+    }
+    .txt-services h4 {
+        font-size: 1.1em;
+    }
+    .services img{
+        width: 100px!important;
+        height: auto;    
+    }
+    .page-down{
+        padding-top: 30px;
+        padding-bottom: 30px; 
+    }
+
+}
+
+/*-------------------------
+    gallerier
+-------------------------*/
+
+
+.page_down_gallery{
+    z-index: 555!important;
+    width: 40px;
+    height: 40px; 
+    cursor: pointer;
+}
+
+.page_down_gallery:hover{
+        -webkit-transform: scale(1.1, 1.1);
+    -webkit-transition-timing-function: ease-out;
+    -moz-transform: scale(1.1, 1.1);
+    -moz-transition-duration: 500ms;
+    -moz-transition-timing-function: ease-out;
+    -ms-transform: scale(1.1, 1.1); 
+    -ms-transition-duration: 500ms; 
+    -ms-transition-timing-function: ease-out;
+}
+
+
+
+.murerarbejde, .ombygninger, .specialarbejde{
+    margin-bottom: 100px;
+    background-color: #f6f6f6!important;
+    border: 0px;
+    border-radius: 2px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    background: #fff;
+    -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.15),0 0 0 1px rgba(0,0,0,0.05);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.15),0 0 0 1px rgba(0,0,0,0.05);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+
+
+
+@media screen and (min-width: 1200px){
+    .murerarbejde, .ombygninger, .specialarbejde{
+        padding: 130px 100px 130px 100px !important;
+    }
+    .flisearbejde, .impra{
+        padding: 130px 100px 130px 100px !important;
+    }
+    .outer-content{
+        margin-top: 50px; 
+        padding-left: 110px; 
+    }
+    #murerarbejde{
+        margin-top: 40px; 
+    }
+
+    .outer-content-left{
+        margin-top: 50px; 
+        padding-right: 110px; 
+    }
+    .inner-content{
+        width: 470px; 
+        line-height: 1.8em;
+        color: #bdbdbd;
+    }
+    .heading{
+        color: #00a8b0;
+        font-size: 35px;
+        font-weight: 100;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .heading-first{
+        color: #3c3c3b;
+        font-size: 35px;
+        font-weight: 100;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        text-align: center;
+    }
+    .page-down-div{
+        margin-top: 100px; 
+        padding-left: 180px; 
+    }
+}
+
+
+
+
+@media screen and (min-width: 992px) and (max-width: 1199px){
+    .murerarbejde, .ombygninger, .specialarbejde{
+        padding: 100px 100px 100px 100px !important;
+    }
+    .flisearbejde, .impra{
+        padding: 100px 100px 100px 100px !important;
+    }
+    .outer-content{
+        padding-left: 70px; 
+    }
+
+    .outer-content-left{    
+        padding-right: 70px; 
+    }
+    
+    .inner-content{ 
+        line-height: 1.8em;
+        color: #bdbdbd;
+    }
+    .heading{
+        color: #00a8b0;
+        font-size: 35px;
+        font-weight: 100;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .heading-first{
+        color: #3c3c3b;
+        font-size: 35px;
+        font-weight: 100;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        text-align: center;
+    }
+    .page-down-div{
+        margin-top: 80px; 
+        padding-left: 180px; 
+    }
+    
+}
+@media screen and (min-width: 992px) and (max-width: 999px){
+    .heading{
+        padding-top: 0;
+        margin-top: 15px;
+    }
+
+}
+
+@media screen and (min-width: 992px) and (max-width: 1100px){
+
+    .page-down-div {
+        margin-top: 50px!important;
+        padding-left: 145px!important;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 991px){
+    .murerarbejde, .ombygninger, .specialarbejde{
+        padding: 100px 50px 100px 50px !important;
+    }
+    .flisearbejde, .impra{
+        padding: 100px 50px 100px 50px !important;
+    }
+    .outer-content{
+        padding-left: 70px; 
+    }
+
+    .outer-content-left{    
+        padding-right: 70px; 
+    }
+    
+    .inner-content{ 
+        line-height: 1.8em;
+        color: #bdbdbd;
+    }  
+
+    .heading{
+        color: #00a8b0;
+        font-size: 35px;
+        font-weight: 100;
+        padding-bottom: 20px;
+        padding-top: 0;
+        margin-top: 0;
+    }
+
+    .heading-first{
+        color: #3c3c3b;
+        font-size: 35px;
+        font-weight: 100;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        text-align: center;
+    }
+    
+    .page-down-div{
+        margin-top: 40px; 
+        padding-left: 100px; 
+    }
+}
+
+@media screen and (max-width: 767px){
+    .murerarbejde, .ombygninger, .specialarbejde{
+        padding: 0 30px 30px 30px !important;
+    }
+    .flisearbejde, .impra{
+        padding: 0 30px 30px 30px !important;
+    }
+    .outer-content{
+        margin-top: 20px;
+    }
+
+    .outer-content-left{
+        margin-top: 20px; 
+    }
+    .inner-content{
+        margin-bottom: 35px; 
+        line-height: 1.8em;
+        color: #bdbdbd;
+        font-size: 0.9em;
+    }
+    
+    
+    .heading{
+        color: #00a8b0;
+        font-size: 30px;
+        font-weight: 100;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .heading-first{
+        color: #3c3c3b;
+        font-size: 30px;
+        font-weight: 100;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        text-align: center;
+    }
+    .owl-box{
+        padding-left: 0!important;
+        padding-right: 0!important; 
+    }
+    .inner-comment{
+        font-size: 0.9em;
+    }
+    .page-down-div{
+        display:none; 
+    }
+    #murerarbejde{
+        margin-top: 20px; 
+    }
+}
+
+
+
+.inner-comment{
+    line-height: 1.8em;
+    color: #bdbdbd;
+}
+.anchor{
+   display:block;
+   height:60px; /* this is the height of your header */
+   margin-top:-60px; /* this is again negative value of the height of your header */
+   visibility:hidden;
+}
+
+
+
+.no-img{
+    color: #bdbdbd;
+    text-align: center;
+    margin-top: 120px;
+ 
+}
+
+/*-------------------------
+        Kontakt
+-------------------------*/
+#kontakt{
+    padding-top: 50px;
+    padding-bottom: 50px; 
+}
+.mail-link{
+    text-decoration: none; 
+    color:#bdbdbd;
+}
+.mail-link:hover{
+    color: #777;
+}
+
+.contact-btn{
+    color: #bdbdbd;
+    width: 150px; 
+    padding: 10px; 
+    border: 1px solid #bdbdbd; 
+    border-radius: 8px;
+}
+
+.contact-btn:hover{
+   border: 1px solid #777; 
+    color: #777;
+}
+
+body, html{
+    overflow-x: hidden;
+}
